@@ -4,12 +4,12 @@
 
 This project is a **Salesforce Lightning Web Component (LWC)** that demonstrates a **dynamic calculator** with multiple modes:  
 
-✨ Normal Calculator  
-✨ Scientific Calculator  
-✨ Parent-Child Template Rendering  
-✨ Conditional Rendering  
+✨ **Normal Calculator**  
+✨ **Scientific Calculator**  
+✨ **Parent-Child Template Rendering**  
+✨ **Conditional Rendering**  
 
-Users can select between a **Basic Calculator** and a **Scientific Calculator**, perform calculations, and see results dynamically inside a styled **Lightning Card**.
+Users can select between a **Basic Calculator** and a **Scientific Calculator**, perform calculations, and see results dynamically inside a styled **Lightning Card** with **Salesforce Lightning Design System (SLDS)** styling.
 
 ---
 
@@ -18,22 +18,29 @@ Users can select between a **Basic Calculator** and a **Scientific Calculator**,
 - ✅ Switch between **Basic** and **Scientific** calculators  
 - ✅ Dynamic input handling for numbers and operators  
 - ✅ Scientific functions: `sin`, `cos`, `tan`, `log`, `cbrt`  
-- ✅ Backspace and clear functionality  
+- ✅ Backspace (`<<`) and Clear (`C`) functionality  
 - ✅ Conditional template rendering for different calculator modes  
-- ✅ Clean UI with Salesforce Lightning Design System (SLDS)  
+- ✅ Clean and responsive UI with **SLDS**  
+- ✅ Safe input length restriction (max 20 characters)  
+- ✅ Error handling for invalid calculations  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- ⚡ Lightning Web Components (LWC)  
-- 🎨 Salesforce Lightning Design System (SLDS)  
-- 📜 JavaScript (ES6+)  
-- 🏗️ HTML5  
-- 🎭 CSS3  
-- ☁️ Salesforce Platform  
-- 🖥️ Salesforce DX (SFDX) – Development & deployment tools  
-- 💻 VS Code with Salesforce Extensions – IDE for building LWCs  
+- ⚡ **Lightning Web Components (LWC)** – Component framework for Salesforce  
+- 🎨 **Salesforce Lightning Design System (SLDS)** – Styling & responsive UI  
+- 📜 **JavaScript (ES6+)** – Logic & dynamic behavior  
+- 🏗️ **HTML5** – Component markup  
+- 🎭 **CSS3** – Custom styling and alignment  
+- ☁️ **Salesforce Platform** – Hosting and deployment environment  
+- 🖥️ **Salesforce DX (SFDX)** – Development & deployment tool  
+- 💻 **Visual Studio Code (VS Code) with Salesforce Extensions** – IDE for building LWCs  
+- 🔄 **Parent-Child Communication** – Template switching and event handling  
+
+> **Optional Advanced Features**  
+> - Can be extended to **store history of calculations**  
+> - Can integrate **Lightning Message Service (LMS)** for multi-component communication  
 
 ---
 
@@ -43,7 +50,7 @@ Users can select between a **Basic Calculator** and a **Scientific Calculator**,
 
 ```bash
 git clone https://github.com/k-vasantharaj/salesforce-calculator-lwc
-Deploy to your Salesforce Org using SFDX or VS Code.
+Deploy to Salesforce Org using SFDX or VS Code.
 
 Open Lightning App Builder → Add the component to:
 
@@ -54,28 +61,24 @@ Open Lightning App Builder → Add the component to:
 📱 App Page
 
 ▶️ How It Works
-Select Calculator Mode
-
+1️⃣ Select Calculator Mode
 Click CALCULATOR → Basic Calculator opens
 
 Click SCIENTIFIC CALCULATOR → Scientific Calculator opens
 
-Input Numbers & Operators
-
+2️⃣ Input Numbers & Operators
 Use buttons to input numbers and arithmetic operators
 
-Scientific functions like sin, cos, tan, log, and cbrt available in scientific mode
+Scientific functions (sin, cos, tan, log, cbrt) are available in scientific mode
 
-Perform Calculation
-
+3️⃣ Perform Calculation
 Click = to calculate result
 
-C clears input
+Click C to clear input
 
-<< deletes last character
+Click << to delete the last character
 
-Close Calculator
-
+4️⃣ Close Calculator
 Click CLOSE to return to default view
 
 🚀 Example
@@ -90,4 +93,17 @@ Maximum input length: 20 characters
 
 Scientific functions use radians for trigonometric calculations
 
-Designed with SLDS for consistent Salesforce look & feel
+Fully styled using SLDS for consistent Salesforce look & feel
+
+Responsive design for desktop and mobile screens
+
+✨ Styling & Fonts (README Presentation)
+Use **bold** for important labels or buttons
+
+Use > blockquote for notes or tips
+
+Use inline code for operator, functions, or variable names
+
+Use emojis for UI interaction hints (📄 🏠 📱 ➡️)
+
+Headings for sections (##, ###) to make it readable
