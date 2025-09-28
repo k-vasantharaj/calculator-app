@@ -107,3 +107,10 @@ Use inline code for operator, functions, or variable names
 Use emojis for UI interaction hints (📄 🏠 📱 ➡️)
 
 Headings for sections (##, ###) to make it readable
+📸 Screenshots
+<img width="322" height="106" alt="1" src="https://github.com/user-attachments/assets/40ec550f-3ced-448a-b3dc-aba76b4370e7" />
+<img width="322" height="342" alt="2" src="https://github.com/user-attachments/assets/4efc0d08-c489-47fd-89e9-1e5526691489" />
+<img width="321" height="341" alt="3" src="https://github.com/user-attachments/assets/faff9f35-377e-4036-9963-e1e6005be96a" />
+<img width="321" height="341" alt="5" src="https://github.com/user-attachments/assets/d7ad894e-9a48-4bd4-85e5-fae16dc94e18" />
+<img width="321" height="98" alt="6" src="https://github.com/user-attachments/assets/7cce48fe-fd2d-46ca-a639-6ebc3011e242" />
+<img width="941" height="435" alt="7" src="https://github.com/user-attachments/assets/f65ed153-342b-444f-85ee-cdc179225553" />
