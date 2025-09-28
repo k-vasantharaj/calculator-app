@@ -1,1 +1,54 @@
+<template>
+    <lightning-card title="Scientific Calculator">
+       <div class="slds-p-around_medium">
+         <div class="slds-box slds-theme_default slds-align_absolute-center slds-grid slds-grid_vertical slds-grid_align-center">
+            <div class="slds-box slds-theme_shade slds-m-bottom_medium slds-text-align_right 
+                            slds-text-heading_medium slds-p-around_small" 
+                     style="min-width:320px;">
+                    {currentInput}
+                </div>
+            <div class="slds-grid slds-grid_align-center slds-m-around_xx-small">
+                    <lightning-button label="cos" value="cos" variant="neutral" class="slds-m-around_xx-small" onclick={handleSciInput}></lightning-button>
+                    <lightning-button label="%" value="%" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="^2" value="**2" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="C" variant="neutral" class="slds-m-around_xx-small" onclick={clearAll}></lightning-button>
+                    <lightning-button label="<<" variant="neutral" class="slds-m-around_xx-small" onclick={backspace}></lightning-button>
+                </div>   
+            <div class="slds-grid slds-grid_align-center slds-m-around_xx-small">
+                    <lightning-button label="tan" value="tan" variant="neutral" class="slds-m-around_xx-small" onclick={handleSciInput}></lightning-button>
+                    <lightning-button label="7" value="7" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="8" value="8" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="9" value="9" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="/" value="/" variant="brand" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                </div>
 
+                <div class="slds-grid slds-grid_align-center slds-m-around_xx-small">
+                    <lightning-button label="log" value="log" variant="neutral" class="slds-m-around_xx-small" onclick={handleSciInput}></lightning-button>
+                    <lightning-button label="4" value="4" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="5" value="5" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="6" value="6" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="*" value="*" variant="brand" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                </div>
+
+                <div class="slds-grid slds-grid_align-center slds-m-around_xx-small">
+                    <lightning-button label="sin" value="sin" variant="neutral" class="slds-m-around_xx-small" onclick={handleSciInput}></lightning-button>
+                    <lightning-button label="1" value="1" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="2" value="2" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="3" value="3" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="-" value="-" variant="brand" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                </div>
+
+                <div class="slds-grid slds-grid_align-center slds-m-around_xx-small">
+                    <lightning-button label="cbrt" value="cbrt" variant="neutral" class="slds-m-around_xx-small" onclick={handleSciInput}></lightning-button>
+                    <lightning-button label="0" value="0" variant="neutral" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                    <lightning-button label="=" variant="success" class="slds-m-around_xx-small" onclick={calculate}></lightning-button>
+                    <lightning-button label="+" value="+" variant="brand" class="slds-m-around_xx-small" onclick={handleInput}></lightning-button>
+                </div>    
+             <div class="slds-m-top_medium slds-align_absolute-center">
+                    <lightning-button label="CLOSE" variant="destructive" onclick={closeCalculator}></lightning-button>
+                </div>   
+         </div>
+          
+       </div>
+    </lightning-card>
+</template>
