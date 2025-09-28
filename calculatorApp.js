@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
 import calculator from './calculatorApp.html';
 import scientificCalculator from './scientificCalculator.html';
-import normalCalculator from './normalCalculator.html';
+import normalCalculator from './basicCalculator.html';
 export default class Calculator extends LightningElement {
 
 chosenStyle;  
